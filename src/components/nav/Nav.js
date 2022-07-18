@@ -8,19 +8,19 @@ import {
 } from "react-icons/ai";
 
 function Nav() {
-	const [activeNav, setActiveNav] = useState("#");
+	const [activeNav, setActiveNav] = useState("#home");
 
-	const changeActiveLink = () => {
-		setActiveNav("");
-	};
+	// const changeActiveLink = () => {
+	// 	setActiveNav("");
+	// };
 
 	return (
 		<div>
 			<nav>
 				<a
-					href="#"
-					className={activeNav === "#" ? "active" : ""}
-					onClick={() => setActiveNav("#")}
+					href="#home"
+					className={activeNav === "#home" ? "active" : ""}
+					onClick={() => setActiveNav("#home")}
 				>
 					<AiOutlineHome />
 				</a>
