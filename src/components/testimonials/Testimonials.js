@@ -40,9 +40,9 @@ function Testimonials() {
 				scrollbar={{ draggable: true }}
 				pagination={{ clickable: true }}
 			>
-				{clientsData.map((item) => {
+				{clientsData.map((item, i) => {
 					return (
-						<SwiperSlide className="testimonial">
+						<SwiperSlide className="testimonial" key={i}>
 							<div className="client__avatar">
 								<img src={item?.img} alt="" />
 							</div>
