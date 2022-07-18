@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 
 function Nav() {
-	const [activeNav, setActiveNav] = useState("#home");
+	const [activeNav, setActiveNav] = useState("");
 
 	// const changeActiveLink = () => {
 	// 	setActiveNav("");
